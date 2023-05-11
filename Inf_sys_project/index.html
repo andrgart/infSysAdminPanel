@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/handbook_show.js"></script>
+    <script defer src="js/tabledraw.js"></script>
+    <title>Amogus</title>
+</head>
+<body>
+    <section class="section section_handbook border">
+        <div class="handbook_list border">
+            <ul class="handbook_list_ul">
+                <li class="handbook_list_li li_active">client</li>
+                <li class="handbook_list_li">car_client</li>
+                <li class="handbook_list_li">cars</li>
+            </ul>
+            <button class="load_table_btn">Refresh table</button>
+        </div>
+        <div class="handbook_div border">
+            <div id="client" class="handbook handbook_active border">
+                <form class="handbook_form" action="add_client.php" method="post">
+                    <label class="form_item" for="fname"> First name <input type="text" name="fname"> </label>
+
+                    <label class="form_item" for="sname"> Second name <input type="text" name="sname"> </label>
+
+                    <label class="form_item" for="mname"> Midle name <input type="text" name="mname"> </label>
+
+                    <label class="form_item" for="pass_serial"> Passport serial <input type="text" name="pass_serial"> </label>
+
+                    <label class="form_item" for="pass_number"> Passport number <input type="text" name="pass_number"> </label>
+
+                    <label class="form_item" for="addres"> Addres <input type="text" name="addres"> </label>
+
+                    <label class="form_item" for="phone"> Phone number <input type="text" name="phone"> </label>
+
+                    <input class="form_item client_btn" type="submit">
+                </form>
+            </div>
+            <div id="car_client" class="handbook border">
+                <form class="handbook_form" action="add_client_cars.php" method="post">
+                    <label class="form_item" for="car_id"> Car id <input type="text" name="car_id"> </label>
+
+                    <label class="form_item" for="c_id"> Client id <input type="text" name="c_id"> </label>
+
+                    <label class="form_item" for="delivery"> Delivery <input type="text" name="delivery"> </label>
+
+                    <label class="form_item" for="payment_method"> Payment method <input type="text" name="payment_method"> </label>
+
+                    <input class="form_item" type="submit">
+                </form>
+            </div>
+            <div id="cars" class="handbook border">
+                <form class="handbook_form handbook_form_cars" action="" method="post">
+                    <label class="form_item" for="car_country"> Car country <input type="text" name="car_country"> </label>
+
+                    <label class="form_item" for="car_brand"> Car brand <input type="text" name="car_brand"> </label>
+
+                    <label class="form_item" for="car_model"> Car model <input type="text" name="car_model"> </label>
+
+                    <label class="form_item" for="availability"> Availability <input type="text" name="availability"> </label>
+
+                    <label class="form_item" for="price"> Price <input type="text" name="price"> </label>
+                </form>
+                <input class="form_item cars_btn" type="submit">
+            </div>
+        </div>
+    </section>
+    <section class="section section_data_table border">
+        <div class="beutifull_emptyness"></div>
+        <div class="table_data">
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* ------ */
+.section {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.section_handbook {
+    display: flex;
+
+}
+
+/* -- HAND BOOK LIST-- */
+.handbook_list {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+}
+
+.handbook_list_ul {
+    list-style: none;
+    margin: 10px;
+}
+
+.li_active {
+    color: red;
+    font-size: 18px;
+}
+
+.load_table_btn {
+    margin: 10px;
+}
+
+/* --- HANDBOOK FORM--- */
+.handbook {
+    margin: 20px;
+    display: none;
+}
+
+.handbook_active {
+    display: block;
+}
+
+.handbook_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* ---- DATA TABLE ----*/
+.beutifull_emptyness {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+}
+
+.section_data_table {
+    display: flex;
+}
+
+.data_table_row {
+    display: flex;
+    border-bottom: 2px solid rgb(97, 97, 97);
+}
+
+.data_table_row p {
+    margin: 5px;
+}
+.data_table_row p:last-child {
+    margin-left: auto;
+    font-size: 24px;
+}
+.data_table_row p:last-child:hover {
+    margin-left: auto;
+    color: red;
+}
+
+.img_list {
+    width: 30px;
+    height: 40px;
+}
